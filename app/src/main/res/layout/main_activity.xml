@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:drawableTint="@color/mdtp_white"
+        android:drawableLeft="@drawable/ic_user"
+        android:id="@+id/profile"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="PROFILE "
+        android:gravity="center_vertical|right"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.TabLayout
+            app:tabIndicatorHeight="2dp"
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@android:color/white"
+            app:tabMaxWidth="0dp"
+            app:tabMode="scrollable" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>

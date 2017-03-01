@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:id="@+id/lnvDetail"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtName"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:text="food name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/txtDescription"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:textSize="12sp"  android:layout_height="wrap_content"
+            android:text="food desription"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/txtAddress"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="quantity"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/txtEmail"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:text="date"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnStaus"
+            android:layout_marginTop="3dp"
+            android:textSize="12sp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Panding"
+            android:textColor="@color/mdtp_white"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_marginBottom="3dp"
+            android:id="@+id/btnReject"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Reject"
+            android:textSize="12sp"
+            android:textColor="@color/mdtp_white"
+            android:background="@color/Red"/>
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
